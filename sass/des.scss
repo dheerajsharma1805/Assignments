@@ -1,0 +1,637 @@
+$bg-color: #FEF7F5;
+
+$dark-color: #4D4039;
+
+$light-color: #796A5F;
+
+$orange: #EB5E1E;
+
+%page {
+    font-family: 'Merriweather', serif;
+}
+
+%common {
+    display: block;
+    margin: auto;
+}
+
+body {
+    margin: 0px;
+    @extend %page;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .start {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    #bar {
+        display: none;
+    }
+
+    .contentbg {
+        display: inline-block;
+        vertical-align: bottom; 
+        width: 46%;
+    }
+
+    .tagline {
+        display: inline-block;
+    }
+
+    .company-details {
+        display: flex;
+        justify-content: center;
+    }
+
+    .address {
+        margin-right: 30px;
+        padding-left: 10px;
+        width: 30%;
+    }
+
+    .serv-option {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        padding-top: 25px;
+        width: 60%;
+    }
+
+    .options2 {
+        background-color: white;
+        border-radius: 7px;
+        box-shadow: 2px 2px 33px -14px gray;;
+        display: inline-block;
+        padding-bottom: 37px;
+        text-align: center;
+        vertical-align: baseline;
+        width: 22%;
+    }
+
+    .content1 {
+        color: $dark-color;
+        padding: 45px 0px 45px 210px;
+        }
+    
+    .sittingboy2 {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 35%;
+    }
+
+    .options {
+        display: inline-block;
+        width: 44%;
+    }
+
+    .sittingboy { 
+        margin-left: 110px;
+        width: 76%;
+    }
+
+    .tagline {
+        padding-left: 120px;
+        width: 31%;
+    }
+
+    .image4 {
+        display: inline-block;
+        height: 172px;
+        width: 22%;
+    }
+
+    .image1 {
+        border-radius: 0.5em;
+        display: inline-block;
+        height: 250px;
+        width: 30%;
+    }
+
+    .form {
+        display: flex;
+        justify-content: space-around;
+        width: 175;
+    }
+
+    .form div {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .contentbg {
+        display: block;
+    }
+
+    .sittingboy {
+        display: inline-block;
+        width: 90%;
+    }
+
+    .address {
+        margin-bottom: 10px;
+        margin: auto;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        text-align: inherit;
+        width: 60%;
+    }
+
+    .info {
+        margin: auto;
+        width: 90%;
+    }
+
+    .options2 {
+        background-color: white;
+        border-radius: 7px;
+        box-shadow: 2px 2px 33px -14px gray;;
+        display: block;
+        margin: 5px;
+        margin: auto;
+        padding-bottom: 30px;
+        text-align: center;
+        width: 50%;
+    }
+
+    .content1 {
+        color: $dark-color; 
+    }
+
+    .sittingboy2 {
+        display: block;
+        margin: auto;
+        width: 40%;
+    }
+
+    .options {
+        display: block;
+        margin: auto;
+        width: 40%;
+    }
+
+    .image4 {
+        display: block;
+        margin-bottom: 10px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .image1 {
+        display: block;
+        margin-bottom: 10px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .form {
+        display: block;
+    }
+
+    .form div {
+        width: 100%;
+    }
+
+    .tagline {
+        display: block;
+    }
+
+}
+
+.header {
+    box-shadow: 0px 15px 15px -10px gray;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+}
+
+.heading > h2 {
+    color: $light-color;
+    padding-left: 20px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar > div {
+    color: $dark-color;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: auto;
+}
+
+.content {
+    background-color: #fdf0ea66;
+    padding: 85px;
+}
+
+.toptagline {
+    color: $dark-color;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: left;
+}
+
+.subtagline {
+    color: $light-color;
+    font-weight: 600;
+}
+
+.tagline > h5 {
+    background-color: $orange;
+    border-radius: 2px;
+    color: white;
+    margin-top: 40px;
+    margin: 10px;
+    padding: 7px;
+    text-align: center;
+    width: 35%;
+}
+
+.start {
+    background-color: $orange;
+    border-radius: 4em;
+    color: white !important;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.square0 {
+    background-color: white;
+    border: 3px solid $orange !important;
+    height: 16px;
+    margin-top: 10px;
+    width: 16px !important;
+}
+
+.form div {
+    h4 {
+    color: $dark-color;
+    margin-bottom: 0px;
+    margin-top: 8px;
+    }
+
+    p {
+    color: $light-color;
+    margin-top: 8px;
+    }
+}    
+
+.options > h2 {
+    color: $dark-color;
+    font-size: 2em;
+    text-align: left;
+}
+
+#option1 {
+    height: 22px;
+    left: 65px;
+    position: relative;
+    width: 22px;
+}
+
+#option1a {
+    display: flex;
+    width: 170px;
+}
+
+#option2 {
+    border: 3px solid $orange;
+    color: $orange;
+    height: 22px;
+    left: 65px;
+    position: relative;
+    width: 22px;
+}
+
+#option2a {
+    clear:left
+}
+
+input {
+    border: 1px solid $light-color;
+    padding: 10px 0px;
+    width: 96%;
+}
+
+.services {
+    padding-top: 50px;
+}
+
+.options2 > h5 {
+    color: $dark-color;
+    font-weight: normal;
+}
+
+.square {
+    background-color: white;
+    border: 4px solid $orange;
+    height: 20px;
+    margin-top: 20px;
+    margin: auto;
+    width: 20px;
+}
+
+.content2 {
+    background-color: $bg-color;
+    padding-bottom: 90px;
+}
+
+.container3 h4 {
+    color: rgb(77,63,54);
+    font-size: large;
+}
+
+.header3 {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 90px;
+    width: 20%;
+}
+
+#card {
+    color: $orange;
+}
+
+.image {
+    margin: auto;
+    padding: 50px 0px;
+    width: 77%;
+}
+
+.content4 {
+    background-color: $bg-color;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+.subheading {
+    color: $light-color;
+    font-size: 22px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+}
+
+.description {
+    color: $dark-color;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.line {
+    background-color: $orange;
+    border: 2px solid $orange;
+    margin-top: 11px;
+    margin: auto;
+    width: 3%;
+}
+
+.questions {
+    font-size: 21px;
+    font-weight: bold;
+    margin: auto;
+    width: 56%;
+}
+
+.box {
+    display: flex;
+}
+
+.square1 {
+    background-color: white;
+    border: 2px solid $dark-color;
+    display: inline-block;
+    height: 8px ;
+    margin-top: 13px;
+    margin: 4px;
+    width: 8px ;
+}
+
+#orngbox {
+    border: 2px solid $orange;
+}
+
+.que {
+    display: inline-block;
+    margin: 5px;
+
+    div {
+    margin: 5px;
+    }
+    
+}
+
+#orange {
+    color: $orange; 
+}
+
+.content5 {
+    padding-top: 20px;
+}
+
+.content6 {
+    background-color: $bg-color;
+    height: 150px;
+    padding: 33px 0px 70px 0px;
+}
+
+.dot {
+    color: blue;
+    margin: auto;
+}
+
+h2 {
+    color: $light-color;
+    text-align: center;
+}
+
+h1 {
+    color:$dark-color;
+    text-align: center;
+}
+
+.content7 {
+    padding-bottom: 50px;
+}
+
+.header4 {
+    height: 100px;
+    text-align: center;
+}
+
+.header4 .subheading {
+    padding-top: 25px;
+}
+
+.company-details {
+    padding-top: 55px;
+}
+
+.address {
+    border-bottom: 2px solid $orange;
+    border-top: 2px solid $orange;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+.info {
+    border-bottom: 2px solid $orange;
+    border-top: 2px solid $orange;
+    box-shadow: 0px 0px 5px 0px gray;
+    padding-bottom: 40px;
+}
+
+.info form {
+    margin: 10px 0px;
+    padding-left: 10px;
+}
+
+.client-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.client-info > div {
+    margin: 3px;
+    width: 50%;
+}
+
+.address1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.address1 > h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.square2 {
+    background-color: white;
+    border: 3px solid $orange;
+    height: 15px ;
+    margin-top: 8px;
+    width: 15px ;
+}
+
+.ad {
+    display: flex;
+    margin-top: 10px;
+}
+
+.a {
+    margin-left: 10px;
+}
+
+.address {
+    h3 {
+    color: $dark-color;
+    margin-top: 2px ;
+    }
+
+    h5 {
+    font-weight: 100;
+    }
+}
+
+h3 {
+    margin-bottom: 3px;
+    margin-top: 27px;
+}
+
+h5 {
+    color: $light-color;
+    font-size: inherit;
+    margin: 0px;
+}
+
+.client-msg input {
+    width: 97.5%;   
+}
+
+.Message > input {
+    height: 100px;
+}
+
+.button {
+    background-color: $orange;
+    border-radius: 0.3em;
+    color: white;
+    margin-top: 55px;
+    margin: auto;
+    padding: 6px 0px;
+    text-align: center;
+    width: 22%;
+}
+
+.content8 {
+    background-color: $bg-color;
+    padding-bottom: 40px;
+    padding-top: 25px;
+}
+
+.h4 {
+    color: $dark-color;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.header5 {
+    margin-top: 10px ;
+}
+
+.subscribe {
+
+    display: inline-block;
+    width: 100%;
+    
+    label {
+        background-color: $orange;
+        color: white;
+        padding: 11px;
+        border-radius: 5px;
+    }
+
+    input {
+        border: 1px solid darkgray;
+        width: 30%;
+    }   
+}
+
+.subscribe > form {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}

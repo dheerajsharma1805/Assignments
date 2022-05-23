@@ -1,0 +1,608 @@
+body {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .start {
+    display: none;
+  }
+
+  #bar {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  #bar {
+    display: none;
+  }
+
+  .contentbg {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 46%;
+  }
+
+  .tagline {
+    display: inline-block;
+  }
+
+  .company-details {
+    display: flex;
+    justify-content: center;
+  }
+
+  .address {
+    margin-right: 30px;
+    padding-left: 10px;
+    width: 30%;
+  }
+
+  .serv-option {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 25px;
+    width: 60%;
+  }
+
+  .options2 {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 2px 2px 33px -14px gray;
+    display: inline-block;
+    padding-bottom: 37px;
+    text-align: center;
+    vertical-align: baseline;
+    width: 22%;
+  }
+
+  .content1 {
+    color: #4D4039;
+    padding: 45px 0px 45px 210px;
+  }
+
+  .sittingboy2 {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 35%;
+  }
+
+  .options {
+    display: inline-block;
+    width: 44%;
+  }
+
+  .sittingboy {
+    margin-left: 110px;
+    width: 76%;
+  }
+
+  .tagline {
+    width: 27%;
+    padding-left: 120px;
+  }
+
+  .image4 {
+    display: inline-block;
+    height: 172px;
+    width: 22%;
+  }
+
+  .image1 {
+    border-radius: 0.5em;
+    display: inline-block;
+    height: 250px;
+    width: 30%;
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-around;
+    width: 175;
+  }
+
+  .form div {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contentbg {
+    display: block;
+  }
+
+  .sittingboy {
+    display: inline-block;
+    width: 90%;
+  }
+
+  .address {
+    margin-bottom: 10px;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: inherit;
+    width: 60%;
+  }
+
+  .info {
+    margin: auto;
+    width: 90%;
+  }
+
+  .options2 {
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 2px 2px 33px -14px gray;
+    display: block;
+    margin: 5px;
+    margin: auto;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 50%;
+  }
+
+  .content1 {
+    color: #4D4039;
+  }
+
+  .sittingboy2 {
+    display: block;
+    margin: auto;
+    width: 40%;
+  }
+
+  .options {
+    display: block;
+    margin: auto;
+    width: 40%;
+  }
+
+  .image4 {
+    display: block;
+    margin-bottom: 10px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .image1 {
+    display: block;
+    margin-bottom: 10px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .form {
+    display: block;
+  }
+
+  .form div {
+    width: 100%;
+  }
+
+  .tagline {
+    display: block;
+  }
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 15px 15px -10px gray;
+  z-index: 1;
+}
+
+.heading > h2 {
+  padding-left: 20px;
+  color: #796A5F;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar > div {
+  color: #4D4039;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.content {
+  background-color: rgba(253, 240, 234, 0.4);
+  padding: 85px;
+}
+
+.toptagline {
+  font-size: 2em;
+  font-weight: 600;
+  text-align: left;
+  color: #4D4039;
+}
+
+.subtagline {
+  font-weight: 600;
+  color: #796A5F;
+}
+
+.tagline > h5 {
+  background-color: #EB5E1E;
+  padding: 7px;
+  border-radius: 2px;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  margin-top: 40px;
+  width: 35%;
+}
+
+.start {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 4em;
+  color: white !important;
+  background-color: #EB5E1E;
+}
+
+.square0 {
+  height: 16px;
+  width: 16px !important;
+  background-color: white;
+  border: 3px solid #EB5E1E !important;
+  margin-top: 10px;
+}
+
+.form div h4 {
+  color: #4D4039;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+.form div p {
+  color: #796A5F;
+  margin-top: 8px;
+}
+
+.options > h2 {
+  color: #4D4039;
+  font-size: 2em;
+  text-align: left;
+}
+
+#option1 {
+  height: 22px;
+  width: 22px;
+  position: relative;
+  left: 65px;
+}
+
+#option1a {
+  width: 170px;
+  display: flex;
+}
+
+#option2 {
+  height: 22px;
+  width: 22px;
+  color: #EB5E1E;
+  border: 3px solid #EB5E1E;
+  position: relative;
+  left: 65px;
+}
+
+#option2a {
+  clear: left;
+}
+
+input {
+  border: 1px solid #796A5F;
+  width: 96%;
+  padding: 10px 0px;
+}
+
+.services {
+  padding-top: 50px;
+}
+
+.options2 > h5 {
+  color: #4D4039;
+  font-weight: normal;
+}
+
+.square {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 4px solid #EB5E1E;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.content2 {
+  background-color: #FEF7F5;
+  padding-bottom: 90px;
+}
+
+.container3 h4 {
+  color: rgb(77, 63, 54);
+  font-size: large;
+}
+
+.header3 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.head {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin: auto;
+  padding-top: 90px;
+}
+
+#card {
+  color: #EB5E1E;
+}
+
+.image {
+  width: 77%;
+  margin: auto;
+  padding: 50px 0px;
+}
+
+.content4 {
+  background-color: #FEF7F5;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.subheading {
+  margin: auto;
+  text-align: center;
+  color: #796A5F;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.description {
+  margin: 0px;
+  text-align: center;
+  color: #4D4039;
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
+.line {
+  width: 3%;
+  border: 2px solid #EB5E1E;
+  background-color: #EB5E1E;
+  margin: auto;
+  margin-top: 11px;
+}
+
+.questions {
+  width: 56%;
+  margin: auto;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.box {
+  display: flex;
+}
+
+.square1 {
+  display: inline-block;
+  margin: 4px;
+  margin-top: 13px;
+  height: 8px;
+  width: 8px;
+  background-color: white;
+  border: 2px solid #4D4039;
+}
+
+#orngbox {
+  border: 2px solid #EB5E1E;
+}
+
+.que {
+  margin: 5px;
+  display: inline-block;
+}
+.que div {
+  margin: 5px;
+}
+
+#orange {
+  color: #EB5E1E;
+}
+
+.content5 {
+  padding-top: 20px;
+}
+
+.content6 {
+  height: 150px;
+  background-color: #FEF7F5;
+  padding: 33px 0px 70px 0px;
+}
+
+.dot {
+  margin: auto;
+  color: blue;
+}
+
+h2 {
+  text-align: center;
+  color: #796A5F;
+}
+
+h1 {
+  text-align: center;
+  color: #4D4039;
+}
+
+.content7 {
+  padding-bottom: 50px;
+}
+
+.header4 {
+  text-align: center;
+  height: 100px;
+}
+
+.header4 .subheading {
+  padding-top: 25px;
+}
+
+.company-details {
+  padding-top: 55px;
+}
+
+.address {
+  box-shadow: 0px 0px 5px 0px gray;
+  border-top: 2px solid #EB5E1E;
+  border-bottom: 2px solid #EB5E1E;
+}
+
+.info {
+  box-shadow: 0px 0px 5px 0px gray;
+  border-top: 2px solid #EB5E1E;
+  border-bottom: 2px solid #EB5E1E;
+  padding-bottom: 40px;
+}
+
+.info form {
+  padding-left: 10px;
+  margin: 10px 0px;
+}
+
+.client-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.client-info > div {
+  margin: 3px;
+  width: 50%;
+}
+
+.address1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.address1 > h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.square2 {
+  background-color: white;
+  border: 3px solid #EB5E1E;
+  margin-top: 8px;
+  height: 15px;
+  width: 15px;
+}
+
+.ad {
+  display: flex;
+  margin-top: 10px;
+}
+
+.a {
+  margin-left: 10px;
+}
+
+.address h3 {
+  margin-top: 2px;
+  color: #4D4039;
+}
+.address h5 {
+  font-weight: 100;
+}
+
+h3 {
+  margin-top: 27px;
+  margin-bottom: 3px;
+}
+
+h5 {
+  margin: 0px;
+  color: #796A5F;
+  font-size: inherit;
+}
+
+.client-msg input {
+  width: 97.5%;
+}
+
+.Message > input {
+  height: 100px;
+}
+
+.button {
+  border-radius: 0.3em;
+  width: 22%;
+  padding: 6px 0px;
+  margin: auto;
+  text-align: center;
+  background-color: #EB5E1E;
+  color: white;
+  margin-top: 55px;
+}
+
+.content8 {
+  background-color: #FEF7F5;
+  padding-bottom: 40px;
+  padding-top: 25px;
+}
+
+.h4 {
+  color: #4D4039;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.header5 {
+  margin-top: 10px;
+}
+
+.subscribe {
+  display: inline-block;
+  width: 100%;
+}
+.subscribe label {
+  background-color: #EB5E1E;
+  color: white;
+  padding: 11px;
+  border-radius: 5px;
+}
+.subscribe input {
+  border: 1px solid darkgray;
+  width: 30%;
+}
+
+.subscribe > form {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=des1.css.map */
